@@ -1,0 +1,231 @@
+html, body {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
+
+/*NAVBAR*/
+
+nav {
+    height: 80px;
+    background-color: #364a2a;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+nav img {
+    height: 30px;
+    width: 30px;
+}
+
+
+/*INTRODUCTION*/
+
+#introduction {
+    background-color: black;
+    color: #DEE5E5;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+#artist-photo, #artist-announce {
+    margin: auto;
+    animation: fadeIn 10s;
+    -webkit-animation: fadeIn 10s;
+    -moz-animation: fadeIn 10s;
+    -o-animation: fadeIn 10s;
+    -ms-animation: fadeIn 10s;
+}
+
+#artist-photo img {
+    max-width: 100%;
+    max-height: 100vh;
+    width: auto;
+}
+
+#artist-announce {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Rye', cursive;
+    color: #9DB195;
+}
+
+#boldname {
+    font-size: 50px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes -webkit-animation, -moz-animation, -o-animation, -ms-animation fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/*SECTION 2 - ALBUM COVER, SINGLES*/
+
+#singles_and_cover {
+    background-color: #303025;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    color: #DEE5E5;
+}
+
+#singles {
+    margin-right: 10%;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 20px;
+}
+
+#albumcover {
+    margin-left: 10%;
+}
+
+#albumcover img {
+    height: 400px;
+    width: 400px;
+}
+
+/*NOTES*/
+
+#liner_notes {
+    background-image: url("westernblur.jpg");
+    background-size: cover;
+    color: #DEE5E5;
+    font-size: 25px;
+    text-align: center;
+    padding: 50px 30px;
+    font-size: 18px;
+    font-family: 'Shippori Mincho', serif;
+}
+
+#paragraph {
+    padding: 30px;
+}
+
+#quotes {
+    font-size: 15px;
+}
+
+/*VIDEO*/
+
+#video {
+   background-color: #303025;
+    padding: 50px;
+    text-align: center;
+}
+
+#video p {
+    padding-top: 25px;
+    font-size: 25px;
+    font-family: 'Rye', cursive;
+    color: #9DB195;
+}
+
+@keyframes tourstatement {
+    0% {color: #DEE5E5;}
+    50% {color: #364a2a;}
+    100% {color: #DEE5E5;}
+}
+
+/*FOOTER*/
+
+footer {
+    height: 150px;
+    background-color: #364a2a;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Shippori Mincho', serif;
+}
+
+footer img {
+    padding: 10px;
+}
+
+/*MEDIA QUERY*/
+
+@media (max-width: 900px) {
+    
+    nav, .container, #singles_and_cover {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav {
+        height: 100px;
+        text-align: center;
+    }
+    
+    nav ul li {
+        padding: 15px; 
+    }
+    
+    nav img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .container {
+        height: 70%;
+    }
+    
+    #artist-photo img {
+        max-height: 50vh;
+    }
+    
+    #artist-announce {
+        font-size: 25px;
+        padding-bottom: 40px;
+    }
+    
+    #singles_and_cover {
+        height: 50%;
+    }
+    
+    #singles {
+        font-size: 15px;
+        margin-right: 0;
+        padding-top: 10px;
+    }
+    
+    #albumcover {
+        margin-left: 0;
+        padding: 25px;
+    }
+    
+    #albumcover img {
+        height: 80%;
+        width: 80%;
+    }
+    
+    iframe {
+        width: 100%;
+    }
