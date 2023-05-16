@@ -58,13 +58,13 @@ nav img {
 
 #artist-photo img {
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 90vh;
     width: auto;
 }
 
 #artist-announce {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Rye', cursive;
     color: #9DB195;
 }
@@ -99,18 +99,15 @@ nav img {
 }
 
 #singles {
-    margin-right: 10%;
+    margin-left: 25px;
+    width: 50%;
     font-family: 'Shippori Mincho', serif;
     font-size: 20px;
 }
 
-#albumcover {
-    margin-left: 10%;
-}
-
 #albumcover img {
-    height: 400px;
-    width: 400px;
+    height: 50%;
+    width: 50%;
 }
 
 /*NOTES*/
@@ -206,24 +203,15 @@ footer img {
         padding-bottom: 40px;
     }
     
-    #singles_and_cover {
-        height: 50%;
-    }
-    
     #singles {
         font-size: 15px;
-        margin-right: 0;
-        padding-top: 10px;
-    }
-    
-    #albumcover {
         margin-left: 0;
-        padding: 25px;
+        padding-bottom: 15px;
     }
     
     #albumcover img {
-        height: 80%;
-        width: 80%;
+        height: 300px;
+        width: 300px;
     }
     
     iframe {
