@@ -44,7 +44,7 @@ nav img {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+/*    height: 90vh;*/
 }
 
 #artist-photo, #artist-announce {
@@ -93,7 +93,6 @@ nav img {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    height: 60vh;
     text-align: center;
     color: #DEE5E5;
 }
@@ -108,6 +107,7 @@ nav img {
 #albumcover img {
     height: 50%;
     width: 50%;
+    padding: 20px 0;
 }
 
 /*NOTES*/
