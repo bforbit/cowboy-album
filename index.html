@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRACKER HARTMAN - THIS SIDE OF THE WEST</title>
+    <title>Tracker Hartman - This Side of the West - The New Album</title>
+    <meta name="description" content="HTML and CSS landing page project based on a fictional country music artist.">
+    <link rel="canonical" href="https://bforbit.net/projects/countrystar/index.html">
     <link rel="stylesheet" href="country-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<!--FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&family=Shippori+Mincho:wght@600&display=swap" rel="stylesheet">
+
+<!--SCHEMA-->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Country Music Artist Webpage - bforbit.net",
+        "url": "https://bforbit.net/projects/countrystar/index.html",
+        "description": "HTML and CSS landing page project based on a fictional country music artist."
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Projects",
+            "item": "https://bforbit.net/projects/index.html"
+  },{
+   
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Country Star",
+            "item": "https://bforbit.net/projects/countrystar/index.html"
+  }]
+}
+</script>
 </head>
 <body>
    
     <nav>
         <ul>
-            <li><a href="#"><img src="ico_fb.png"></a></li>
-            <li><a href="#"><img src="ico_in.png"></a></li>
-            <li><a href="#"><img src="ico_sp.png"></a></li>
-            <li><a href="#"><img src="ico_tw.png"></a></li>
-            <li><a href="#"><img src="ico_yt.png"></a></li>
+            <li><a href="#"><img src="ico_fb.png" alt="Facebook icon"></a></li>
+            <li><a href="#"><img src="ico_in.png" alt="Instagram icon"></a></li>
+            <li><a href="#"><img src="ico_sp.png" alt="Spotify icon"></a></li>
+            <li><a href="#"><img src="ico_tw.png" alt="Twitter icon"></a></li>
+            <li><a href="#"><img src="ico_yt.png" alt="YouTube icon"></a></li>
         </ul>
     </nav>
     
 <section id="introduction">
 <div class="container">
-    <div id="artist-photo"</div>
-    <img src="singer1.jpg" alt="cowboy picture">
+    <div id="artist-photo">
+    <img src="singer1.jpg" alt="Cowboy holding his hat and looking down">
     </div>
     
     <div id="artist-announce">
@@ -39,11 +73,11 @@
    <div id="singles">
     <p>Featuring the hit singles</p>
     <h2>CACTUS WINGS</h2>
-    <p>&
+       <p>&</p>
     <h2>LONESOME FIRE</h2>
     </div>
     <div id="albumcover">
-    <img src="thartman-albumart.jpg" alt="album cover">
+    <img src="thartman-albumart.jpg" alt="fictional album cover for a country music artist">
     </div>
 </section>
 
@@ -61,8 +95,9 @@
 </section>
 
 <footer>
-    <img src="tumbleweed.png" alt="tumbleweed accent">
+    <img src="tumbleweed.png" alt="tumbleweed">
     <br>Copyright 2023 LaFake Records. Artist photo by Sami Abdullah.
+    <p id="home-link"><a href="https://bforbit.net">Back to bforbit.net</a></p>
 </footer>
 </body>
 </html>
